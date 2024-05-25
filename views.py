@@ -145,7 +145,7 @@ def tui():
 
 system('cls' if name == 'nt' else 'clear')
 print(logo)
-channel, post = input(f"\n{G}[+] ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴇᴡ ᴘᴏsᴛ ᴜʀʟ ==> {S}").replace('https://t.me/', '').split('/')
+channel, post = "https://t.me/The_Hacking_Zone/1130"
 
 try:
     search('<span class="tgme_widget_message_views">([^<]+)', requests.get(f'https://t.me/{channel}/{post}',
